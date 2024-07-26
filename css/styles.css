@@ -6,7 +6,8 @@
 body{
   font-family: "Mukta", sans-serif;
   background: white;
-  line-height: 1.5
+  line-height: 1.5;
+  background: ghostwhite;
 }
 header{
   background-color: #234;
@@ -29,6 +30,8 @@ form{
   border-top: 3px solid lightblue;
   width: 100%;
   margin: 10px auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 fieldset{
   border:0;
@@ -70,6 +73,7 @@ legend {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
+textarea,
 select {
   background: rgba(255,255,255,0.1);
   border: 2px solid transparent;
@@ -85,6 +89,15 @@ select {
   margin-bottom: 30px;
   border-radius: 8px;
   display: flex;
+  transition: background-color 0.3s ease;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus{
+  background-color: #cff;
+  border-color: pink;
 }
 input.zip{
   width: 50%;
@@ -99,16 +112,11 @@ input[type="checkbox"]:checked + label,input[type="radio"]:checked + label{
 }
 input::placeholder{
   text-align: right;
-  color: red;
 }
-textarea{
-  padding: 10px;
-  max-width: 100%;
-  line-height: 1.5;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 1px #999;
+#name::placeholder,#email::placeholder{
+  color:red;
 }
+
 button {
   padding: 19px 39px 18px 39px;
   color: #FFF;
