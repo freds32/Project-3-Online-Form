@@ -130,7 +130,7 @@ button {
   border-width: 1px 1px 3px;
   margin-bottom: 10px;
 }
-.contact,.zip{
+.contact,.zip-container{
   display: flex;
   flex-direction: column;
 }
@@ -150,18 +150,20 @@ input#html,input#css,input#javascript,input#html_format,input#plaintext{
     max-width: 600px;
     margin:auto;
   }
-  .contact,.zip{
+  .contact,.zip-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+  }
+  #zip{
+  flex: none;
+  flex-basis: content;
+  margin-right: 250px;
   }
   .newsletter,.format{
-    display: flex;
+    display: block;
     flex-direction: row;
   }
-  input.zip{
-    width: 25%;
-  }
+
   label{
     flex: 1;
   }
