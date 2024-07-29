@@ -166,6 +166,8 @@ input#html,input#css,input#javascript,input#html_format,input#plaintext{
 
   label{
     flex: 1;
+    align-content: center;
+    margin-bottom: 30px;
   }
   input[type="text"],
     input[type="email"],
