@@ -156,8 +156,8 @@ input#html,input#css,input#javascript,input#html_format,input#plaintext{
   }
   #zip{
   flex: none;
-  flex-basis: content;
-  margin-right: 250px;
+  width: 25%;
+  margin-right: 298px;
   }
   .newsletter,.format{
     display: block;
